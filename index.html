@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường THCS, THPT Hồng Bình</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for a more modern look (optional) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3B82F6; /* Blue-600 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2563EB; /* Blue-700 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-blue-600 text-white p-6 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="#home" class="text-2xl md:text-3xl font-bold hover:text-blue-200 transition duration-300">
+                <i class="fas fa-school mr-2"></i>Trường THCS, THPT Hồng Bình
+            </a>
+            <button id="mobileMenuButton" class="md:hidden p-2 rounded-md text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+            <nav id="mainNav" class="w-full md:w-auto hidden md:flex flex-col md:flex-row md:items-center mt-4 md:mt-0 space-y-2 md:space-y-0 md:space-x-3">
+                <a href="#home" class="block px-3 py-2 hover:bg-blue-500 rounded-md transition duration-300">Trang Chủ</a>
+                <a href="#programs" class="block px-3 py-2 hover:bg-blue-500 rounded-md transition duration-300">Chương Trình Học</a>
+                <a href="#admissions" class="block px-3 py-2 hover:bg-blue-500 rounded-md transition duration-300">Tuyển Sinh</a>
+                <a href="#student-life" class="block px-3 py-2 hover:bg-blue-500 rounded-md transition duration-300">Đời Sống Học Đường</a>
+                <a href="#gallery" class="block px-3 py-2 hover:bg-blue-500 rounded-md transition duration-300">Thư Viện Ảnh</a>
+                <a href="#contact" class="block px-3 py-2 hover:bg-blue-500 rounded-md transition duration-300">Liên Hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-6">
+
+        <section id="home" class="mb-12 p-6 bg-white rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300">
+            <div class="text-center mb-6">
+                <h2 class="text-3xl font-semibold text-blue-700 mb-4">Chào Mừng Đến Với Trường THCS, THPT Hồng Bình!</h2>
+                <p class="text-lg text-gray-700">Nơi ươm mầm tri thức, chắp cánh tương lai.</p>
+            </div>
+            <img src="https://i.postimg.cc/sXFv4Szf/Screenshot-2025-05-13-214348.png" alt="Toàn cảnh trường THCS, THPT Hồng Bình" class="rounded-md shadow-lg w-full h-auto mb-6" onerror="this.onerror=null;this.src='https://placehold.co/1200x500/3B82F6/FFFFFF?text=Không+tải+được+ảnh';">
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="p-4 bg-blue-50 rounded-lg shadow hover:shadow-md transition-shadow">
+                    <i class="fas fa-graduation-cap text-3xl text-blue-600 mb-2"></i>
+                    <h3 class="text-xl font-medium text-blue-700">Chất Lượng Giáo Dục</h3>
+                    <p class="text-gray-600">Chương trình tiên tiến, đội ngũ giáo viên tận tâm.</p>
+                </div>
+                <div class="p-4 bg-green-50 rounded-lg shadow hover:shadow-md transition-shadow">
+                    <i class="fas fa-users text-3xl text-green-600 mb-2"></i>
+                    <h3 class="text-xl font-medium text-green-700">Môi Trường Thân Thiện</h3>
+                    <p class="text-gray-600">An toàn, năng động, khuyến khích sáng tạo.</p>
+                </div>
+                <div class="p-4 bg-yellow-50 rounded-lg shadow hover:shadow-md transition-shadow">
+                    <i class="fas fa-lightbulb text-3xl text-yellow-600 mb-2"></i>
+                    <h3 class="text-xl font-medium text-yellow-700">Phát Triển Toàn Diện</h3>
+                    <p class="text-gray-600">Kiến thức, kỹ năng, và phẩm chất đạo đức.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="programs" class="mb-12 p-6 bg-white rounded-lg shadow-xl">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Chương Trình Học</h2>
+            <div class="grid md:grid-cols-2 gap-6"> 
+                <div class="border border-gray-200 p-4 rounded-lg hover:shadow-lg transition-shadow">
+                    <img src="https://i.postimg.cc/Pq7msPk0/Screenshot-2025-05-13-214256.png" alt="Chương trình Trung học Cơ sở tại trường Hồng Bình" class="rounded-md shadow-sm w-full h-auto mb-3 object-cover" style="max-height: 250px;" onerror="this.onerror=null;this.src='https://placehold.co/400x250/EC4899/FFFFFF?text=Không+tải+được+ảnh';">
+                    <h3 class="text-xl font-medium text-pink-700 mb-2">Khối Trung Học Cơ Sở</h3>
+                    <p class="text-gray-600">Tập trung vào kiến thức chuyên sâu hơn, định hướng nghề nghiệp và phát triển tư duy phản biện...</p>
+                </div>
+                <div class="border border-gray-200 p-4 rounded-lg hover:shadow-lg transition-shadow">
+                    <img src="https://i.postimg.cc/tC7p7J0B/Screenshot-2025-05-13-214453.png" alt="Chương trình Trung học Phổ thông tại trường Hồng Bình" class="rounded-md shadow-sm w-full h-auto mb-3 object-cover" style="max-height: 250px;" onerror="this.onerror=null;this.src='https://placehold.co/400x250/8B5CF6/FFFFFF?text=Không+tải+được+ảnh';">
+                    <h3 class="text-xl font-medium text-purple-700 mb-2">Khối Trung Học Phổ Thông</h3>
+                    <p class="text-gray-600">Chuẩn bị hành trang vững chắc cho các kỳ thi quan trọng và con đường vào đại học...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="admissions" class="mb-12 p-6 bg-blue-50 rounded-lg shadow-xl">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Thông Tin Tuyển Sinh</h2>
+            <div class="grid md:grid-cols-2 gap-6 items-start">
+                <div>
+                    <img src="https://i.postimg.cc/87dDH7ds/Screenshot-2025-05-13-214411.png" alt="Hình ảnh tuyển sinh của trường" class="rounded-md shadow-md w-full h-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x450/6366F1/FFFFFF?text=Không+tải+được+ảnh';">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-medium text-blue-600 mb-3">Quy Trình Tuyển Sinh Năm Học 2025-2026</h3>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-700 mb-4">
+                        <li>Nộp hồ sơ trực tuyến hoặc trực tiếp tại văn phòng trường.</li>
+                        <li>Tham gia kỳ kiểm tra đầu vào (nếu có).</li>
+                        <li>Phỏng vấn với Ban Giám Hiệu.</li>
+                        <li>Nhận thông báo kết quả và hoàn tất thủ tục nhập học.</li>
+                    </ol>
+                    <h3 class="text-xl font-medium text-blue-600 mb-2">Đối Tượng Tuyển Sinh</h3>
+                    <p class="text-gray-700 mb-4">Học sinh từ lớp 6 đến lớp 12 đáp ứng các yêu cầu về học lực và hạnh kiểm.</p>
+                    <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300 shadow-md">
+                        <i class="fas fa-envelope mr-2"></i>Liên Hệ Tư Vấn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="student-life" class="mb-12 p-6 bg-white rounded-lg shadow-xl">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Đời Sống Học Đường</h2>
+            <p class="text-center text-gray-700 mb-6">Chúng tôi tin rằng trải nghiệm học đường không chỉ giới hạn trong lớp học. Nhà trường tổ chức nhiều hoạt động ngoại khóa, câu lạc bộ và sự kiện để học sinh phát triển toàn diện.</p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-md transition-shadow">
+                    <img src="https://i.postimg.cc/zDsPZKHr/Screenshot-2025-05-13-231908.png" alt="Câu lạc bộ thể thao của trường" class="rounded-md shadow-sm w-full h-52 object-cover mb-3" onerror="this.onerror=null;this.src='https://placehold.co/400x250/EF4444/FFFFFF?text=Ảnh+CLB+Thể+Thao';">
+                    <h3 class="text-xl font-medium text-red-700">Câu Lạc Bộ Thể Thao</h3>
+                    <p class="text-gray-600">Bóng đá, bóng rổ, cầu lông, bơi lội...</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-md transition-shadow">
+                    <img src="https://i.postimg.cc/ZRgsqyf6/Screenshot-2025-05-13-231843.png" alt="Câu lạc bộ nghệ thuật của trường" class="rounded-md shadow-sm w-full h-52 object-cover mb-3" onerror="this.onerror=null;this.src='https://placehold.co/400x250/22C55E/FFFFFF?text=Ảnh+CLB+Nghệ+Thuật';">
+                    <h3 class="text-xl font-medium text-green-700">Câu Lạc Bộ Nghệ Thuật</h3>
+                    <p class="text-gray-600">Âm nhạc, mỹ thuật, kịch, nhiếp ảnh...</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-md transition-shadow">
+                    <img src="https://i.postimg.cc/mknx73x8/Screenshot-2025-05-13-214535.png" alt="Hoạt động dã ngoại của học sinh" class="rounded-md shadow-sm w-full h-52 object-cover mb-3" onerror="this.onerror=null;this.src='https://placehold.co/400x250/D946EF/FFFFFF?text=Ảnh+Hoạt+Động+Dã+Ngoại';">
+                    <h3 class="text-xl font-medium text-purple-700">Hoạt Động Dã Ngoại</h3>
+                    <p class="text-gray-600">Tham quan, học tập thực tế, xây dựng tinh thần đồng đội.</p>
+                </div>
+                 <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-md transition-shadow lg:col-span-3"> 
+                    <h3 class="text-xl font-medium text-sky-700 mb-3 text-center">Thư Viện & Phòng Lab Hiện Đại</h3>
+                    <p class="text-gray-600 mb-4 text-center">Nguồn tài liệu phong phú và trang thiết bị tiên tiến hỗ trợ tối đa cho việc học tập và nghiên cứu của học sinh.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                        <div>
+                            <img src="https://i.postimg.cc/BnspMLqg/Screenshot-2025-05-13-214236.png" alt="Hình ảnh thư viện trường" class="rounded-md shadow-sm w-full h-52 object-cover mb-2" onerror="this.onerror=null;this.src='https://placehold.co/400x250/0EA5E9/FFFFFF?text=Thư+Viện';">
+                            <p class="text-center text-sm text-gray-600">Thư viện khang trang</p>
+                        </div>
+                        <div>
+                             <img src="https://i.postimg.cc/wjmzcrjJ/Screenshot-2025-05-13-214503.png" alt="Hình ảnh phòng tin học" class="rounded-md shadow-sm w-full h-52 object-cover mb-2" onerror="this.onerror=null;this.src='https://placehold.co/400x250/0EA5E9/FFFFFF?text=Phòng+Tin+Học';">
+                             <p class="text-center text-sm text-gray-600">Phòng tin học hiện đại</p>
+                        </div>
+                        <div>
+                            <img src="https://i.postimg.cc/HkRxT5V0/Screenshot-2025-05-13-214433.png" alt="Hình ảnh phòng thí nghiệm" class="rounded-md shadow-sm w-full h-52 object-cover mb-2" onerror="this.onerror=null;this.src='https://placehold.co/400x250/0EA5E9/FFFFFF?text=Phòng+Thí+Nghiệm';">
+                            <p class="text-center text-sm text-gray-600">Phòng thí nghiệm đầy đủ</p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="mb-12 p-6 bg-white rounded-lg shadow-xl">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Thư Viện Ảnh Chung</h2>
+            <p class="text-center text-gray-700 mb-6">Những khoảnh khắc đáng nhớ tại Trường THCS, THPT Hồng Bình.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <img src="https://i.postimg.cc/BnMTpm7S/Screenshot-2025-05-13-214244.png" alt="Ảnh thư viện trường học" class="rounded-md shadow-sm w-full h-auto object-cover aspect-square hover:opacity-80 transition-opacity" onerror="this.onerror=null;this.src='https://placehold.co/400x300/CCCCCC/FFFFFF?text=Ảnh+Lỗi';">
+                <img src="https://i.postimg.cc/YS01sQT1/Screenshot-2025-05-13-214251.png" alt="Học sinh đọc sách trong thư viện" class="rounded-md shadow-sm w-full h-auto object-cover aspect-square hover:opacity-80 transition-opacity" onerror="this.onerror=null;this.src='https://placehold.co/400x300/CCCCCC/FFFFFF?text=Ảnh+Lỗi';">
+                <img src="https://i.postimg.cc/fL0YwDzy/Screenshot-2025-05-13-214302.png" alt="Không gian học tập tại trường" class="rounded-md shadow-sm w-full h-auto object-cover aspect-square hover:opacity-80 transition-opacity" onerror="this.onerror=null;this.src='https://placehold.co/400x300/CCCCCC/FFFFFF?text=Ảnh+Lỗi';">
+                <img src="https://i.postimg.cc/MGnQDqj5/Screenshot-2025-05-13-214308.png" alt="Hoạt động của học sinh" class="rounded-md shadow-sm w-full h-auto object-cover aspect-square hover:opacity-80 transition-opacity" onerror="this.onerror=null;this.src='https://placehold.co/400x300/CCCCCC/FFFFFF?text=Ảnh+Lỗi';">
+                <img src="https://i.postimg.cc/hvBQcmZZ/Screenshot-2025-05-13-214333.png" alt="Phòng học hoặc phòng chức năng" class="rounded-md shadow-sm w-full h-auto object-cover aspect-square hover:opacity-80 transition-opacity" onerror="this.onerror=null;this.src='https://placehold.co/400x300/CCCCCC/FFFFFF?text=Ảnh+Lỗi';">
+                <img src="https://i.postimg.cc/MH5HwFQX/Screenshot-2025-05-13-214357.png" alt="Một góc khác của trường" class="rounded-md shadow-sm w-full h-auto object-cover aspect-square hover:opacity-80 transition-opacity" onerror="this.onerror=null;this.src='https://placehold.co/400x300/CCCCCC/FFFFFF?text=Ảnh+Lỗi';">
+                <img src="https://i.postimg.cc/hGVSgYFg/Screenshot-2025-05-13-214440.png" alt="Phòng thí nghiệm hoặc phòng học chuyên đề" class="rounded-md shadow-sm w-full h-auto object-cover aspect-square hover:opacity-80 transition-opacity" onerror="this.onerror=null;this.src='https://placehold.co/400x300/CCCCCC/FFFFFF?text=Ảnh+Lỗi';">
+                <img src="https://i.postimg.cc/mknx73x8/Screenshot-2025-05-13-214535.png" alt="Học sinh trong giờ học tin học" class="rounded-md shadow-sm w-full h-auto object-cover aspect-square hover:opacity-80 transition-opacity" onerror="this.onerror=null;this.src='https://placehold.co/400x300/CCCCCC/FFFFFF?text=Ảnh+Lỗi';">
+            </div>
+        </section>
+
+        <section id="contact" class="p-6 bg-blue-50 rounded-lg shadow-xl">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Liên Hệ Với Chúng Tôi</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-medium text-blue-600 mb-3">Thông Tin Liên Hệ:</h3>
+                    <p class="mb-2 flex items-start"><i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3 w-5 text-center"></i>Địa chỉ: 333 QL 13 Phường Hiệp Bình, Thành phố Thủ Đức, Thành phố Hồ Chí Minh</p>
+                    <p class="mb-2 flex items-center"><i class="fas fa-envelope text-blue-600 mr-3 w-5 text-center"></i>Email: <a href="mailto:hongbinh@hbz.io.vn" class="text-blue-600 hover:underline">hongbinh@hbz.io.vn</a></p>
+                    <p class="mb-2 flex items-center"><i class="fas fa-globe text-blue-600 mr-3 w-5 text-center"></i>Website: <a href="http://hbz.io.vn" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">hbz.io.vn</a></p>
+                    </div>
+                <div>
+                    <h3 class="text-xl font-medium text-blue-600 mb-3">Gửi Lời Nhắn Cho Chúng Tôi:</h3>
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Họ và Tên:</label>
+                            <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+                            <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                         <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Lời nhắn:</label>
+                            <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300">
+                                <i class="fas fa-paper-plane mr-2"></i>Gửi Lời Nhắn
+                            </button>
+                        </div>
+                    </form>
+                    <div id="formMessage" class="mt-4 text-center"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-8 mt-12">
+        <div class="container mx-auto">
+            <p class="mb-2">© <span id="currentYear"></span> Trường THCS, THPT Hồng Bình. Mọi quyền được bảo lưu.</p>
+            <p class="text-sm text-gray-400">Thiết kế và phát triển bởi HBZ</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTopButton" title="Lên đầu trang" class="hidden fixed bottom-5 right-5 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 focus:outline-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

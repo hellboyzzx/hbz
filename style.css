@@ -1,0 +1,21 @@
+/* style.css - Bạn có thể để trống tệp này nếu sử dụng hoàn toàn Tailwind CSS từ CDN */
+/* Hoặc bạn có thể thêm các kiểu tùy chỉnh không có trong Tailwind hoặc để ghi đè. */
+
+/* Ví dụ: Nếu bạn không dùng Tailwind và muốn tự viết CSS */
+/*
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+*/
+
+/* Thêm một chút hiệu ứng cho ảnh trong thư viện khi hover */
+#gallery img:hover, #student-life img:hover { /* Áp dụng cho cả thư viện ảnh chung và ảnh trong đời sống học đường */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
